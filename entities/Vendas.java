@@ -35,7 +35,7 @@ public class Vendas extends Pessoa{
     public double setCashback(double valorCompra, boolean clubeVantagens) {
         int adicionalCashback = 0;
         if (clubeVantagens) {
-            adicionalCashback = 2;
+            adicionalCashback += 2;
         }
         if (valorCompra >= 1000.00) {
             int porcCashback = 5 + adicionalCashback;

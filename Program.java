@@ -31,10 +31,15 @@ public class Program {
         );
 
         Vendas v1 = new Vendas(2000.00, true);
-        v1.venda(v1.getValorProduto(), v1.isClubeVantagens(), 1);
+        v1.venda(v1.getValorProduto(), v1.isClubeVantagens(), 1); // Cliente
         System.out.println(v1.mensagem());
-        v1.venda(v1.getValorProduto(), v1.isClubeVantagens(), 2);
+        v1.venda(v1.getValorProduto(), v1.isClubeVantagens(), 2); // Colaborador
         System.out.println(v1.mensagem());
 
+        Vendas v2 = new Vendas(2000.00, false);
+        v2.venda(v2.getValorProduto(), v2.isClubeVantagens(), 1); // Cliente
+        System.out.println(v2.mensagem());
+        v2.venda(v2.getValorProduto(), v2.isClubeVantagens(), 2); // Colaborador
+        System.out.println(v2.mensagem());
     }
 }
